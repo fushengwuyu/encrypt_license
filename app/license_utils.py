@@ -97,7 +97,11 @@ class LicenseDecode:
 
 if __name__ == '__main__':
     # make license file
-    mac = '00:28:f8:fa:25:bc'
-    # LicenseEncode(mac, './static/License.dat').gen_license_file()
+    mac = '54:e1:ad:15:38:25'  # 改为需授权的主机的mac地址
+
+    # 第一步，生成license文件
+    LicenseEncode(mac, '../License.dat').gen_license_file()
+
+    # 验证license
     # check license file
-    LicenseDecode('../build/app/License.dat').license_check()
+    # LicenseDecode('./License.dat').license_check()

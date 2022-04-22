@@ -101,12 +101,15 @@ def remove_file():
                 shutil.copyfile(src, dst)
 
 
-
 if __name__ == '__main__':
     try:
         pack_pyd()
     except Exception as e:
         print(str(e))
     finally:
+
         delete_c()
-    remove_file()
+    try:
+        remove_file()
+    except:
+        ...

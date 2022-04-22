@@ -18,3 +18,4 @@ python license_utils.py
 python setup.py
 ```
 执行完毕，会生成build文件夹，该文件夹为加密后的项目。在build中执行项目启动文件run.py，可以看到成功运行服务。
+
